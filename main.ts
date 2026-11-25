@@ -6,12 +6,16 @@ const QUIET_DREAD_LINE =
 
 const EXPECTED_LENGTH = 125;
 
+function defaultFolder(): string {
+  return "/output";
+}
+
 function resolveTargetDir(): string {
   const configured = process.env.MAKEFUN_OUTPUT_DIR;
   if (configured !== undefined && configured.length > 0) {
     return configured;
   }
-  return "/output";
+  return defaultFolder();
 }
 
 function checkFinalLine(line: string): void {
