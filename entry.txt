@@ -1,0 +1,1 @@
+Approved — merging auth.ts now. All 47 checks green; in two days no one will remember what it did, or that we were ever here.
